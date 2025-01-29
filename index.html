@@ -1,0 +1,310 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./src/output.css" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    div,
+    button,
+    li {
+      transition-duration: 0.2s;
+    }
+
+    ul li {
+      font-size: 18px;
+    }
+  </style>
+</head>
+
+<body class="bg-black text-white">
+  <div class="flex flex-row container w-[100%] h-[100%] absolute">
+    <div class="first w-[24%] pl-10 fixed border-[1px] border-y-0 border-l-0 border-r-[#333639]">
+      <div
+        class="logo mb-3 p-2 cursor-pointer w-[fit-content] hover:bg-zinc-800 hover:rounded-full hover:duration-[0.2s]">
+        <svg viewBox="0 0 24 24" aria-hidden="true"
+          class="invert w-8 r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-lrsllp r-1nao33i r-16y2uox r-8kz0gk">
+          <g>
+            <path
+              d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
+            </path>
+          </g>
+        </svg>
+      </div>
+      <div class="sidebar ">
+        <ul class="flex flex-col">
+          <div class="side-home flex py-3 cursor-pointer w-[fit-content] hover:bg-zinc-800 hover:rounded-full">
+            <div class="home-svg px-2"><svg viewBox="0 0 24 24" aria-hidden="true"
+                class="invert w-6 r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1nao33i r-lwhw9o r-cnnz9e">
+                <g>
+                  <path
+                    d="M21.591 7.146L12.52 1.157c-.316-.21-.724-.21-1.04 0l-9.071 5.99c-.26.173-.409.456-.409.757v13.183c0 .502.418.913.929.913H9.14c.51 0 .929-.41.929-.913v-7.075h3.909v7.075c0 .502.417.913.928.913h6.165c.511 0 .929-.41.929-.913V7.904c0-.301-.158-.584-.408-.758z">
+                  </path>
+                </g>
+              </svg></div>
+            <li class="px-4"><a href="#">Home</a></li>
+          </div>
+          <div class="side-Explore flex py-3 cursor-pointer w-[fit-content] hover:bg-zinc-800 hover:rounded-full">
+            <div class="Explore-svg px-2"><svg viewBox="0 0 24 24" aria-hidden="true"
+                class="invert w-6 r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1nao33i r-lwhw9o r-cnnz9e">
+                <g>
+                  <path
+                    d="M10.25 3.75c-3.59 0-6.5 2.91-6.5 6.5s2.91 6.5 6.5 6.5c1.795 0 3.419-.726 4.596-1.904 1.178-1.177 1.904-2.801 1.904-4.596 0-3.59-2.91-6.5-6.5-6.5zm-8.5 6.5c0-4.694 3.806-8.5 8.5-8.5s8.5 3.806 8.5 8.5c0 1.986-.682 3.815-1.824 5.262l4.781 4.781-1.414 1.414-4.781-4.781c-1.447 1.142-3.276 1.824-5.262 1.824-4.694 0-8.5-3.806-8.5-8.5z">
+                  </path>
+                </g>
+              </svg></div>
+            <li class="px-4"><a href="#">Explore</a></li>
+          </div>
+          <div class="side-Notifications flex py-3 cursor-pointer w-[fit-content] hover:bg-zinc-800 hover:rounded-full">
+            <div class="Notifications-svg px-2"><svg viewBox="0 0 24 24" aria-hidden="true"
+                class="invert w-6 r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1nao33i r-lwhw9o r-cnnz9e">
+                <g>
+                  <path
+                    d="M19.993 9.042C19.48 5.017 16.054 2 11.996 2s-7.49 3.021-7.999 7.051L2.866 18H7.1c.463 2.282 2.481 4 4.9 4s4.437-1.718 4.9-4h4.236l-1.143-8.958zM12 20c-1.306 0-2.417-.835-2.829-2h5.658c-.412 1.165-1.523 2-2.829 2zm-6.866-4l.847-6.698C6.364 6.272 8.941 4 11.996 4s5.627 2.268 6.013 5.295L18.864 16H5.134z">
+                  </path>
+                </g>
+              </svg></div>
+            <li class="px-4"><a href="#">Notifications</a></li>
+          </div>
+          <div class="side-Messeges flex py-3 cursor-pointer w-[fit-content] hover:bg-zinc-800 hover:rounded-full">
+            <div class="Messeges-svg px-2"><svg viewBox="0 0 24 24" aria-hidden="true"
+                class="invert w-6 r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1nao33i r-lwhw9o r-cnnz9e">
+                <g>
+                  <path
+                    d="M1.998 5.5c0-1.381 1.119-2.5 2.5-2.5h15c1.381 0 2.5 1.119 2.5 2.5v13c0 1.381-1.119 2.5-2.5 2.5h-15c-1.381 0-2.5-1.119-2.5-2.5v-13zm2.5-.5c-.276 0-.5.224-.5.5v2.764l8 3.638 8-3.636V5.5c0-.276-.224-.5-.5-.5h-15zm15.5 5.463l-8 3.636-8-3.638V18.5c0 .276.224.5.5.5h15c.276 0 .5-.224.5-.5v-8.037z">
+                  </path>
+                </g>
+              </svg></div>
+            <li class="px-4"><a href="#">Messeges</a></li>
+          </div>
+          <div class="side-Grok flex py-3 cursor-pointer w-[fit-content] hover:bg-zinc-800 hover:rounded-full">
+            <div class="Grok-svg px-2"><svg viewBox="0 0 24 24" aria-hidden="true"
+                class="invert w-6 r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1nao33i r-lwhw9o r-cnnz9e">
+                <g>
+                  <path
+                    d="M2.205 7.423L11.745 21h4.241L6.446 7.423H2.204zm4.237 7.541L2.2 21h4.243l2.12-3.017-2.121-3.02zM16.957 0L9.624 10.435l2.122 3.02L21.2 0h-4.243zm.767 6.456V21H21.2V1.51l-3.476 4.946z">
+                  </path>
+                </g>
+              </svg></div>
+            <li class="px-4"><a href="#">Grok</a></li>
+          </div>
+          <div class="side-Communities flex py-3 cursor-pointer w-[fit-content] hover:bg-zinc-800 hover:rounded-full">
+            <div class="Communities-svg px-2"><svg viewBox="0 0 24 24" aria-hidden="true"
+                class="invert w-6 r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1nao33i r-1q142lx r-1kihuf0 r-1472mwg r-di8nfa r-lrsllp"
+                data-testid="icon">
+                <g>
+                  <path
+                    d="M7.501 19.917L7.471 21H.472l.029-1.027c.184-6.618 3.736-8.977 7-8.977.963 0 1.95.212 2.87.672-.444.478-.851 1.03-1.212 1.656-.507-.204-1.054-.329-1.658-.329-2.767 0-4.57 2.223-4.938 6.004H7.56c-.023.302-.05.599-.059.917zm15.998.056L23.528 21H9.472l.029-1.027c.184-6.618 3.736-8.977 7-8.977s6.816 2.358 7 8.977zM21.437 19c-.367-3.781-2.17-6.004-4.938-6.004s-4.57 2.223-4.938 6.004h9.875zm-4.938-9c-.799 0-1.527-.279-2.116-.73-.836-.64-1.384-1.638-1.384-2.77 0-1.93 1.567-3.5 3.5-3.5s3.5 1.57 3.5 3.5c0 1.132-.548 2.13-1.384 2.77-.589.451-1.317.73-2.116.73zm-1.5-3.5c0 .827.673 1.5 1.5 1.5s1.5-.673 1.5-1.5-.673-1.5-1.5-1.5-1.5.673-1.5 1.5zM7.5 3C9.433 3 11 4.57 11 6.5S9.433 10 7.5 10 4 8.43 4 6.5 5.567 3 7.5 3zm0 2C6.673 5 6 5.673 6 6.5S6.673 8 7.5 8 9 7.327 9 6.5 8.327 5 7.5 5z">
+                  </path>
+                </g>
+              </svg></div>
+            <li class="px-4"><a href="#">Communities</a></li>
+          </div>
+          <div class="side-Profile flex py-3 cursor-pointer w-[fit-content] hover:bg-zinc-800 hover:rounded-full">
+            <div class="Profile-svg px-2"><svg viewBox="0 0 24 24" aria-hidden="true"
+                class="invert w-6 r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1nao33i r-lwhw9o r-cnnz9e">
+                <g>
+                  <path
+                    d="M5.651 19h12.698c-.337-1.8-1.023-3.21-1.945-4.19C15.318 13.65 13.838 13 12 13s-3.317.65-4.404 1.81c-.922.98-1.608 2.39-1.945 4.19zm.486-5.56C7.627 11.85 9.648 11 12 11s4.373.85 5.863 2.44c1.477 1.58 2.366 3.8 2.632 6.46l.11 1.1H3.395l.11-1.1c.266-2.66 1.155-4.88 2.632-6.46zM12 4c-1.105 0-2 .9-2 2s.895 2 2 2 2-.9 2-2-.895-2-2-2zM8 6c0-2.21 1.791-4 4-4s4 1.79 4 4-1.791 4-4 4-4-1.79-4-4z">
+                  </path>
+                </g>
+              </svg></div>
+            <li class="px-4"><a href="#">Profile</a></li>
+          </div>
+          <div class="side-More flex py-3 cursor-pointer w-[fit-content] hover:bg-zinc-800 hover:rounded-full">
+            <div class="More-svg px-2"><svg viewBox="0 0 24 24" aria-hidden="true"
+                class="invert w-6 r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1nao33i r-lwhw9o r-cnnz9e">
+                <g>
+                  <path
+                    d="M3.75 12c0-4.56 3.69-8.25 8.25-8.25s8.25 3.69 8.25 8.25-3.69 8.25-8.25 8.25S3.75 16.56 3.75 12zM12 1.75C6.34 1.75 1.75 6.34 1.75 12S6.34 22.25 12 22.25 22.25 17.66 22.25 12 17.66 1.75 12 1.75zm-4.75 11.5c.69 0 1.25-.56 1.25-1.25s-.56-1.25-1.25-1.25S6 11.31 6 12s.56 1.25 1.25 1.25zm9.5 0c.69 0 1.25-.56 1.25-1.25s-.56-1.25-1.25-1.25-1.25.56-1.25 1.25.56 1.25 1.25 1.25zM13.25 12c0 .69-.56 1.25-1.25 1.25s-1.25-.56-1.25-1.25.56-1.25 1.25-1.25 1.25.56 1.25 1.25z">
+                  </path>
+                </g>
+              </svg></div>
+            <li class="px-4"><a href="#">More</a></li>
+          </div>
+        </ul>
+        <div
+          class="post bg-white text-black w-[fit-content] my-3 px-[35%] py-3 rounded-full cursor-pointer hover:bg-[#ffffffe5]">
+          <a href="#">Post</a>
+        </div>
+        <div class="profile w-[90%] py-4 flex justify-evenly cursor-pointer hover:bg-zinc-800 hover:rounded-full">
+          <div class="profile-pic"><svg class="w-8" xmlns="http://www.w3.org/2000/svg" height="40px"
+              viewBox="0 -960 960 960" fill="#e8eaed">
+              <path
+                d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z" />
+            </svg></div>
+          <div class="profile-info">
+            <h1 class="text-sm">Your Name</h1>
+            <p class="text-sm">@username</p>
+          </div>
+          <div class="profile-icon my-2"><svg viewBox="0 0 24 24" aria-hidden="true"
+              class="invert w-6 r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1nao33i">
+              <g>
+                <path
+                  d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z">
+                </path>
+              </g>
+            </svg></div>
+        </div>
+      </div>
+    </div>
+    <div class="second  w-[46%] h-screen relative left-[24.8%]">b</div>
+    <div class="third w-[2%]"></div>
+    <div class="fourth w-[28%] relative right-[-24%] flex flex-col items-center ">
+      <div class="search z-10 w-[26%] fixed flex items-center justify-center bg-black">
+        <input type="text" placeholder="Search"
+          class="bg-black border-[1px] border-[#333639] w-[94%] mt-1 py-2 pl-4 rounded-full">
+      </div>
+
+      <div class="subscribe w-[90%] border-[1px] border-[#333639] mt-16 rounded-2xl p-4 pt-2">
+        <h1 class="text-xl pb-2 font-extrabold">Subscribe to Premium</h1>
+        <h2 class="text-sm">Subscribe to unlock new features and if eligible, receive a share of revenue.</h2>
+        <button
+          class="bg-[#1d9cf0] text-white hover:bg-[#1d9cf0ec] text-sm mt-2 p-2 rounded-3xl px-5 font-bold">Subscribe</button>
+      </div>
+      <div class="Trending w-[90%] border-[1px] border-[#333639] mt-4 rounded-2xl pt-2">
+        <h1 class="text-xl pb-2 font-extrabold pl-4">What’s happening</h1>
+        <div class="trendig w-[100%] p-3 hover:bg-zinc-800 cursor-pointer flex justify-between">
+          <div class="trending-item">
+            <p class="text-[#3e4246] text-[13px]">Trending</p>
+            <p class="font-bold text-[16px]">This is a trending item</p>
+            <p class="text-[#3e4246] text-[13px]">9,999 posts</p>
+          </div>
+          <svg viewBox="0 0 24 24" aria-hidden="true"
+            class="invert w-6 r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1nao33i">
+            <g>
+              <path
+                d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z">
+              </path>
+            </g>
+          </svg>
+        </div>
+        <div class="trendig w-[100%] p-3 hover:bg-zinc-800 cursor-pointer flex justify-between">
+          <div class="trending-item">
+            <p class="text-[#3e4246] text-[13px]">Trending</p>
+            <p class="font-bold text-[16px]">This is a trending item</p>
+            <p class="text-[#3e4246] text-[13px]">9,999 posts</p>
+          </div>
+          <svg viewBox="0 0 24 24" aria-hidden="true"
+            class="invert w-6 r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1nao33i">
+            <g>
+              <path
+                d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z">
+              </path>
+            </g>
+          </svg>
+        </div>
+        <div class="trendig w-[100%] p-3 hover:bg-zinc-800 cursor-pointer flex justify-between">
+          <div class="trending-item">
+            <p class="text-[#3e4246] text-[13px]">Trending</p>
+            <p class="font-bold text-[16px]">This is a trending item</p>
+            <p class="text-[#3e4246] text-[13px]">9,999 posts</p>
+          </div>
+          <svg viewBox="0 0 24 24" aria-hidden="true"
+            class="invert w-6 r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1nao33i">
+            <g>
+              <path
+                d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z">
+              </path>
+            </g>
+          </svg>
+        </div>
+        <div class="trendig w-[100%] p-3 hover:bg-zinc-800 cursor-pointer flex justify-between">
+          <div class="trending-item">
+            <p class="text-[#3e4246] text-[13px]">Trending</p>
+            <p class="font-bold text-[16px]">This is a trending item</p>
+            <p class="text-[#3e4246] text-[13px]">9,999 posts</p>
+          </div>
+          <svg viewBox="0 0 24 24" aria-hidden="true"
+            class="invert w-6 r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1nao33i">
+            <g>
+              <path
+                d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z">
+              </path>
+            </g>
+          </svg>
+        </div>
+
+        <div class="more w-[100%] p-3 hover:bg-zinc-800 cursor-pointer flex justify-between rounded-b-2xl">
+          <p class="text-[#1d9bf0] text-[13px]">Show more</p>
+        </div>
+      </div>
+
+      <div class="follow w-[90%] border-[1px] border-[#333639] mt-4 rounded-2xl pt-2">
+        <h1 class="text-xl pb-2 font-extrabold pl-4">Who to follow</h1>
+
+        <ul class="w-[100%]">
+          <li class="w-[100%] hover:bg-zinc-800 flex p-2 cursor-pointer">
+            <div class="profile-pic w-[20%]"><svg class="w-14" xmlns="http://www.w3.org/2000/svg" height="40px"
+                viewBox="0 -960 960 960" fill="#e8eaed">
+                <path
+                  d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z">
+                </path>
+              </svg></div>
+
+            <div class="profile-info w-[80%] flex justify-between items-center">
+              <div class="name">
+                <p class="text-white text-[13px]">Name</p>
+                <p class="text-[#3e4246] text-[13px]">@usernname</p>
+              </div>
+              <div>
+                <button class="text-sm bg-white hover:bg-[#ffffffe5] text-black rounded-full px-4 py-2">Follow</button>
+              </div>
+            </div>
+          </li>
+          <li class="w-[100%] hover:bg-zinc-800 flex p-2 cursor-pointer">
+            <div class="profile-pic w-[20%]"><svg class="w-14" xmlns="http://www.w3.org/2000/svg" height="40px"
+                viewBox="0 -960 960 960" fill="#e8eaed">
+                <path
+                  d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z">
+                </path>
+              </svg></div>
+
+            <div class="profile-info w-[80%] flex justify-between items-center">
+              <div class="name">
+                <p class="text-white text-[13px]">Name</p>
+                <p class="text-[#3e4246] text-[13px]">@usernname</p>
+              </div>
+              <div>
+                <button class="text-sm bg-white hover:bg-[#ffffffe5] text-black rounded-full px-4 py-2">Follow</button>
+              </div>
+            </div>
+          </li>
+          <li class="w-[100%] hover:bg-zinc-800 flex p-2 cursor-pointer">
+            <div class="profile-pic w-[20%]"><svg class="w-14" xmlns="http://www.w3.org/2000/svg" height="40px"
+                viewBox="0 -960 960 960" fill="#e8eaed">
+                <path
+                  d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z">
+                </path>
+              </svg></div>
+
+            <div class="profile-info w-[80%] flex justify-between items-center">
+              <div class="name">
+                <p class="text-white text-[13px]">Name</p>
+                <p class="text-[#3e4246] text-[13px]">@usernname</p>
+              </div>
+              <div>
+                <button class="text-sm bg-white hover:bg-[#ffffffe5] text-black rounded-full px-4 py-2">Follow</button>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <div class="more w-[100%] p-3 hover:bg-zinc-800 cursor-pointer flex justify-between rounded-b-2xl">
+          <p class="text-[#1d9bf0] text-[13px]">Show more</p>
+        </div>
+      </div>
+
+      
+    </div>
+  </div>
+</body>
+
+</html>
