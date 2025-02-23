@@ -21,12 +21,18 @@
     ul li {
       font-size: 18px;
     }
+
+    #dynamicContent div {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
   </style>
 </head>
 
 <body class="bg-black text-white">
-  <div class="flex flex-row container w-[100%] h-[100%] absolute">
-    <div class="first w-[24%] pl-10 fixed border-[1px] border-y-0 border-l-0 border-r-[#333639]">
+  <div class="flex flex-row container w-[100%] h-[100%] absolute max-sm:hidden">
+    <div class="first w-[24%] pl-10 pb-4 fixed border-[1px] border-y-0 border-l-0 border-r-[#333639]">
       <div
         class="logo mb-3 p-2 cursor-pointer w-[fit-content] hover:bg-zinc-800 hover:rounded-full hover:duration-[0.2s]">
         <svg viewBox="0 0 24 24" aria-hidden="true"
@@ -155,7 +161,20 @@
         </div>
       </div>
     </div>
-    <div class="second  w-[46%] h-screen relative left-[24.8%]">b</div>
+    <div class="second w-[46%] h-[100%] relative left-[25.3%] ">
+      <div class="second-one bg-black backdrop-blur-md bg-black/40 fixed z-10 w-[43.7%] h-[9%] flex border-[1px] border-x-0 border-t-0 border-b-[#333639]">
+        <div class="second-one-content w-[50%] h-[100%] flex justify-center items-center cursor-pointer hover:bg-zinc-800">
+          <p class="font-bold text-[16px] ">For You</p>
+        </div>
+        <div class="second-one-content w-[50%] h-[100%] flex justify-center items-center cursor-pointer hover:bg-zinc-800">
+          <p class="font-bold text-[16px] ">Following</p>
+        </div>
+      </div>
+      <div class="second-two w-[100%] relative top-[55px]">
+        
+      </div>
+    </div>
+    <div class="w-[1px] fixed right-[32.21%] h-[100%] bg-[#333639]"></div>
     <div class="third w-[2%]"></div>
     <div class="fourth w-[28%] relative right-[-24%] flex flex-col items-center ">
       <div class="search z-10 w-[26%] fixed flex items-center justify-center bg-black">
@@ -301,8 +320,19 @@
           <p class="text-[#1d9bf0] text-[13px]">Show more</p>
         </div>
       </div>
-
-      
+      <div class="footer m-2 pb-20 w-[100%]">
+        <div class="footer-one grid gap-0 grid-cols-3 text-xs text-center">
+          <p class="text-center cursor-pointer hover:underline text-[#3e4246]">Terms of Service</p>
+          <p class="text-center cursor-pointer hover:underline text-[#3e4246]">Privacy Policy</p>
+          <p class="text-center cursor-pointer hover:underline text-[#3e4246]">Cookie Policy</p>
+        </div>
+        <div class="footer-two grid gap-0 grid-cols-4 text-xs text-center">
+          <p class="text-center cursor-pointer hover:underline text-[#3e4246]">Accessibility</p>
+          <p class="text-center cursor-pointer hover:underline text-[#3e4246]">Ads info</p>
+          <p class="text-center cursor-pointer hover:underline text-[#3e4246]">More...</p>
+          <p class="text-center text-[#3e4246]">© 2025 X Corp.</p>
+        </div>
+      </div>
     </div>
   </div>
 </body>
